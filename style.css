@@ -1,0 +1,3559 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Notika - Notika Admin Template 
+    Template URI: 
+    Description: Notika Admin Template is a responsive admin template based on the famous Bootstrap framework it's easy to edit and customize by documentation.
+    Author: lucidtemplate
+    Author URI: 
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+    2. Header Top 
+    3. Main Menu
+    4. status
+    5. statistics 
+    6. Email statistics
+    7. Recent Post
+    8. Blog 
+    9. Recent Items
+    10. Realtime 
+    11. Footer 
+    12. Todo 
+    13. Chat 
+    14. Widget 
+    15. Widget contact 
+    16. Widget contact Form 
+    17. Widget tabs 
+    18. Analtic 
+    19. Alert 
+    20. color 
+    21. tabs 
+    22. Wizard 
+    23. Dropdown triggering 
+    24. Modals 
+    25. Accordion 
+    26. Tooltips 
+    27. Popovers 
+    28. Typography 
+    29. Contact 
+    30. Inbox 
+    31. View Mail 
+    32. Compose Mail 
+    33. Normal Table 
+    34. Data Table 
+    35. Form Element
+    36. Form Components
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: #F6F8FA;
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px
+}
+
+a:focus {
+    outline: 0px solid
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.fix {
+    overflow: hidden
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00c292;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+
+.clear {
+    clear: both
+}
+
+
+
+.mg-tb-40 {
+    margin: 40px 0px;
+}
+
+.mg-tb-30 {
+    margin: 30px 0px;
+}
+
+.mg-t-30 {
+    margin-top: 30px;
+}
+
+.mg-b-15 {
+    margin-bottom: 15px;
+}
+
+.mg-t-15 {
+    margin-top: 15px;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.nk-red {
+    background: #F44336;
+}
+
+.nk-pink {
+    background: #E91E63;
+}
+
+.nk-purple {
+    background: #9C27B0;
+}
+
+.nk-deep-purple {
+    background: #673AB7;
+}
+
+.nk-indigo {
+    background: #3F51B5;
+}
+
+.nk-blue {
+    background: #2196F3;
+}
+
+.nk-light-blue {
+    background: #03A9F4;
+}
+
+.nk-cyan {
+    background: #00BCD4;
+}
+
+.nk-teal {
+    background: #009688;
+}
+
+.nk-green {
+    background: #4CAF50;
+}
+
+.nk-light-green {
+    background: #8BC34A;
+}
+
+.nk-lime {
+    background: #CDDC39;
+}
+
+.nk-yellow {
+    background: #FFEB3B;
+}
+
+.nk-amber {
+    background: #FFC107;
+}
+
+.nk-orange {
+    background: #FF9800;
+}
+
+.nk-deep-orange {
+    background: #FF5722;
+}
+
+.nk-brown {
+    background: #795548;
+}
+
+.nk-gray {
+    background: #9E9E9E;
+}
+
+.nk-blue-gray {
+    background: #607D8B;
+}
+
+.nk-black {
+    background: #000000;
+}
+
+@font-face {
+    font-family: 'notika-icon';
+    src: url('fonts/notika-icon.eot?qzfrsz');
+    src: url('fonts/notika-icon.eot?qzfrsz#iefix') format('embedded-opentype'),
+        url('fonts/notika-icon.ttf?qzfrsz') format('truetype'),
+        url('fonts/notika-icon.woff?qzfrsz') format('woff'),
+        url('fonts/notika-icon.svg?qzfrsz#notika-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sale-statistic-inner,
+.statistic-right-area,
+.email-statis-inner,
+.recent-post-wrapper,
+.blog-inner-list,
+.realtime-wrap,
+.add-todo-list,
+.notika-chat-list,
+.recent-signup-inner,
+.ongoing-task-inner,
+.contact-inner,
+.contact-form,
+.widget-tabs-int,
+.visitor-sv-tm-int,
+.search-engine-int,
+.alert-inner,
+.color-wrap,
+.wizard-wrap-int,
+.dropdown-list,
+.modals-list,
+.accordion-wn-wp,
+.tooltips-inner,
+.popovers-list,
+.typography-list,
+.typography-heading,
+.typography-inline-pro,
+.tpgp-helper,
+.contact-list,
+.inbox-left-sd,
+.inbox-text-list,
+.view-mail-list,
+.normal-table-list,
+.data-table-list,
+.form-element-list,
+.range-slider-wrap,
+.datepicker-int,
+.colorpicker-int,
+.summernote-wrap,
+.dropdone-nk,
+.form-example-wrap,
+.invoice-wrap,
+.google-map-single,
+.data-map-single,
+.image-cropper-wp,
+.nk-cd-ed-wp,
+.bar-chart-wp,
+.line-chart-wp,
+.area-chart-wp,
+.flot-chart-wp,
+.wb-traffic-inner,
+.notika-icon-int,
+.dashboard {
+    padding: 20px;
+    background: #fff;
+}
+
+/*----------------------------------------*/
+/*  2.  Header Top CSS
+/*----------------------------------------*/
+.header-top-area,
+.footer-copyright-area {
+    background: #00c292;
+}
+
+.logo-area {
+    padding: 14px 0px;
+}
+
+.nav.navbar-nav.notika-top-nav {
+    float: right;
+}
+
+.nav.notika-top-nav .open>a,
+.nav.notika-top-nav .open>a:focus,
+.nav.notika-top-nav .open>a:hover {
+    background: #00c292;
+    border-color: 0px solid #00c292;
+
+}
+
+.nav.notika-top-nav>li>a:focus,
+.nav.notika-top-nav>li>a:hover {
+    text-decoration: none;
+    background-color: #00c292;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    padding: 20px 0px 20px 30px;
+}
+
+.rtl-layout .navbar-nav>li>a {
+    padding: 20px 30px 20px 0px;
+}
+
+.nav.navbar-nav.notika-top-nav li a {
+    font-size: 20px;
+    position: relative;
+}
+
+.header-top-menu .nav.notika-top-nav li .search-dd {
+    position: absolute;
+    top: -1px;
+    left: -890px;
+    width: 1140px;
+    border: none;
+}
+
+.default-sidebar-tp .header-top-menu .nav.notika-top-nav li .search-dd,
+.sm-ltd-sd .header-top-menu .nav.notika-top-nav li .search-dd,
+.lg-sd-tp .header-top-menu .nav.notika-top-nav li .search-dd,
+.mini-std-tp .header-top-menu .nav.notika-top-nav li .search-dd,
+.lg-tp-ld .header-top-menu .nav.notika-top-nav li .search-dd,
+.offcanvas .header-top-menu .nav.notika-top-nav li .search-dd,
+.hd-fd-tp .header-top-menu .nav.notika-top-nav li .search-dd,
+.dark-header .header-top-menu .nav.notika-top-nav li .search-dd,
+.dark-sidebar-tp .header-top-menu .nav.notika-top-nav li .search-dd,
+.fullscreen .header-top-menu .nav.notika-top-nav li .search-dd {
+    left: -930px;
+}
+
+.box-layout .header-top-menu .nav.notika-top-nav li .search-dd {
+    left: -865px;
+    width: 1130px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd {
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    width: 300px;
+    border: none;
+    padding: 20px 0px;
+    z-index: 9999;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd .hd-mg-tt h2 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd a {
+    display: block;
+}
+
+.header-top-menu .nav.notika-top-nav li .search-dd .search-input {
+    margin: 7px 300px;
+    position: relative;
+}
+
+.header-top-menu .nav.notika-top-nav li .search-dd .search-input input[type="text"] {
+    height: 40px;
+    width: 100%;
+    background: #F6F8FA;
+    border: none;
+    outline: none;
+    padding: 5px 60px;
+}
+
+.header-top-menu .nav.notika-top-nav li .search-dd .search-input i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.hd-message-sn {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.hd-mg-ctn h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.hd-mg-ctn p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hd-message-img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.hd-mg-ctn {
+    width: 210px;
+    margin-top: 5px;
+}
+
+.hd-message-info a:hover {
+    background: #F6F8FA;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd .hd-mg-va a {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd .hd-mg-va a:hover {
+    color: #00c292;
+}
+
+.hd-task-info {
+    overflow: hidden;
+    margin: 0px 15px;
+}
+
+.hd-task-info .skill .progress {
+    margin: 28px 0px 50px 0px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd.notification-dd {
+    left: -150px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd.task-dd {
+    left: -200px;
+}
+
+.header-top-menu .nav.notika-top-nav li .message-dd.chat-dd {
+    left: -250px;
+}
+
+.hd-message-img img {
+    border-radius: 50%;
+}
+
+.hd-message-img.chat-img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.search-people {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-people i {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-size: 16px;
+}
+
+.search-people input[type="text"] {
+    border: none;
+    padding: 10px 40px;
+    margin-left: 30px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background: #F6F8FA;
+}
+
+.hd-message-img.chat-img {
+    position: relative;
+}
+
+.hd-message-img.chat-img .chat-avaible i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+    color: #00c292;
+}
+
+.ntd-ctn {
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    font-size: 10px;
+    background: #e46a76;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.spinner4 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    left: -14px;
+}
+
+.spinner4:after,
+.spinner4:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.spinner-4::before,
+.spinner-4::after {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: orangered;
+    -webkit-animation: pulse 3s linear infinite;
+    animation: pulse 3s linear infinite;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.spinner-4:after {
+    -webkit-animation: pulse 2s linear 2.3s infinite;
+    animation: pulse 2s linear 2.3s infinite;
+    z-index: 99;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+/*----------------------------------------*/
+/*  3.  Main Menu CSS
+/*----------------------------------------*/
+.nav-tabs.notika-menu-wrap {
+    border-bottom: 0px solid #ddd;
+}
+
+.nav-tabs.notika-menu-wrap>li.active>a,
+.nav-tabs.notika-menu-wrap>li.active>a:focus,
+.nav-tabs.notika-menu-wrap>li.active>a:hover {
+    border: 0px solid #ddd;
+    border: none;
+}
+
+.notika-tab-menu-bg {
+    position: relative;
+}
+
+.notika-tab-menu-bg:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    content: "";
+    z-index: 9;
+    height: 100%;
+}
+
+.custom-menu-content ul.notika-main-menu-dropdown {
+    position: relative;
+    z-index: 99;
+}
+
+ul.notika-menu-wrap li a {
+    font-size: 15px;
+    color: #333;
+    padding: 15px 25px;
+    border: none;
+}
+
+.custom-menu-content ul.notika-main-menu-dropdown li {
+    display: inline-block;
+}
+
+.custom-menu-content ul.notika-main-menu-dropdown li a {
+    padding: 20px 20px;
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.custom-menu-content ul.notika-main-menu-dropdown li ul.layout-more-dp {
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    left: -20px;
+    border: none;
+    border-radius: 0px;
+}
+
+.custom-menu-content ul.notika-main-menu-dropdown li ul.layout-more-dp li a {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: none !important;
+    animation-fill-mode: none !important
+}
+
+.mg-t-80-b-40 {
+    margin: 102px 0px 40px 0px;
+}
+
+.mean-container .mean-nav ul li a {
+    color: #333;
+}
+
+.mean-container .mean-nav ul li a:hover {
+    color: #00c292;
+}
+
+.box-layout .header-top-area {
+    width: 1200px;
+}
+
+/*----------------------------------------*/
+/*  4.  status CSS
+/*----------------------------------------*/
+.wb-traffic-inner {
+    padding: 20px;
+    background: #fff;
+    display: flex;
+}
+
+.website-traffic-ctn h2,
+.curved-ctn h2,
+.past-day-statis h2,
+.email-ctn-round h2,
+.recent-post-title h2,
+.recent-items-title h2,
+.realtime-title h2,
+.contact-hd h2,
+.animation-ctn-hd h2,
+.alert-hd h2,
+.color-hd h2,
+.tab-hd h2,
+.wizard-hd h2,
+.dropdown-trig-hd h2,
+.modals-hd h2,
+.accordion-hd h2,
+.tooltips-hd h2,
+.popovers-hd h2,
+.typography-list h2,
+.typography-heading h2,
+.typography-in-hd h2,
+.tpgp-hp-hd h2,
+.view-mail-hrd h2,
+.multiupload-sys h2,
+.basic-tb-hd h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.website-traffic-ctn p,
+.curved-ctn p,
+.recent-post-title p,
+.recent-post-it-ctn p,
+.view-ml-rl p,
+.mail-ads p,
+.multiupload-sys p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+/*----------------------------------------*/
+/*  9.  Recent Items CSS
+/*----------------------------------------*/
+.recent-items-wp {
+    overflow: hidden;
+    background: #fff;
+}
+
+.flot-chart-items {
+    height: 143px;
+    width: calc(100% + 19px);
+    margin: -20px -10px 0;
+    bottom: -10px;
+    background: #fff;
+}
+
+.rc-it-ltd {
+    padding: 20px;
+    background: #fff;
+}
+
+.flot-chart-items.flot-chart.vt-ct-it {
+    height: 98px;
+}
+
+.email-rdn-hd,
+.recent-post-title,
+.recent-items-title {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/*----------------------------------------*/
+/*  10.  Realtime CSS
+/*----------------------------------------*/
+
+.realtime-vst-sg {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.realtime-country-ctn {
+    padding-top: 20px;
+}
+
+.realtime-country-ctn.realtime-ltd-mg {
+    padding-top: 0px;
+}
+
+.realtime-country-ctn h5 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.realtime-ctn-st,
+.realtime-bw {
+    border: 1px solid #e4e4e4;
+    padding: 2px 6px;
+    margin-right: 10px;
+}
+
+.realtime-ctn-st img {
+    width: 20px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.realtime-ctn {
+    margin-bottom: 20px;
+}
+
+.realtime-map {
+    margin: 28px 0px;
+}
+
+/*----------------------------------------*/
+/*  11.  Footer CSS
+/*----------------------------------------*/
+.footer-copyright-area {
+    margin-top: 40px;
+}
+
+.footer-copyright-area p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.footer-copyright-area a {
+    color: #fff;
+    transition: all .4s ease 0s;
+}
+
+.footer-copyright-area a:hover {
+    color: #333;
+    transition: all .4s ease 0s;
+}
+
+/*----------------------------------------*/
+/*  12.  Todo CSS
+/*----------------------------------------*/
+
+.checkbox input[type="checkbox"] {
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+    outline: none !important;
+}
+
+.checkbox label {
+    display: inline-block;
+    padding-left: 25px;
+    position: relative;
+    font-size: 14px;
+}
+
+.checkbox-primary input[type="checkbox"]:checked+label::before {
+    background-color: #00c292;
+    border-color: #00c292;
+}
+
+.checkbox label::before {
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #80898e;
+    content: "";
+    display: inline-block;
+    height: 17px;
+    left: 0;
+    margin-left: 0px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    width: 17px;
+    outline: none !important;
+}
+
+.checkbox-primary input[type="checkbox"]:checked+label::after {
+    color: #ffffff;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+}
+
+.checkbox label::after {
+    color: #333333;
+    display: inline-block;
+    font-size: 11px;
+    height: 16px;
+    left: 0;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-top: 1px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+
+
+/*----------------------------------------*/
+/*  24.  Modals CSS
+/*----------------------------------------*/
+.modals-single p {
+    font-size: 14px;
+    color: #222;
+    line-height: 24px;
+}
+
+.modals-default-notika {
+    background: #ccc;
+    padding: 40px 190px;
+}
+
+.modal-inner-pro {
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.modal-inner-pro h2,
+.modals-default .modal-body h2,
+.modal-sm .modal-body h2,
+.modal-large .modal-body h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-inner-pro p,
+.modals-default .modal-body p,
+.modal-sm .modal-body p,
+.modal-large .modal-body p,
+.accordion-hd p,
+.tooltips-hd p,
+.tooltips-ctn p,
+.tooltips-static p,
+.popovers-hd p,
+.typography-list p,
+.tpgp-ele-tx p,
+.view-mail-atn p,
+.basic-tb-hd p {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+.modal-ft {
+    text-align: right;
+}
+
+.modal-ft .btn-modal,
+.modals-default-cl .btn-info,
+.modal-sm .modal-footer .btn-default,
+.modal-large .modal-footer .btn-default,
+.modals-default .modal-footer .btn-default {
+    background: #00c292;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+
+.modals-default-cl .btn-info {
+    margin-right: 10px;
+}
+
+.modal-ft .btn-modal {
+    margin-left: 10px;
+}
+
+.modal-footer .btn+.btn {
+    margin-left: 10px;
+}
+
+.modal-ft .btn-modal:focus,
+.modal-ft .btn-modal:active,
+.modal-ft .btn-modal:hover,
+.modals-default-cl .btn-info:focus,
+.modals-default-cl .btn-info:active,
+.modals-default-cl .btn-info:hover,
+.modals-default .modal-footer .btn-default:focus,
+.modals-default .modal-footer .btn-default:active,
+.modals-default .modal-footer .btn-default:hover,
+.modal-sm .modal-footer .btn-default:focus,
+.modal-sm .modal-footer .btn-default:active,
+.modal-sm .modal-footer .btn-default:hover,
+.modal-large .modal-footer .btn-default:focus,
+.modal-large .modal-footer .btn-default:active,
+.modal-large .modal-footer .btn-default:hover {
+    background: #00c292;
+    outline: none;
+    color: #fff;
+    box-shadow: none;
+}
+
+.modals-default .close,
+.modal-sm .close,
+.modal-large .close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background: #00c292;
+    opacity: 1;
+    color: #fff;
+    height: 26px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    outline: none;
+}
+
+.modal-dialog.modals-default {
+    width: 720px;
+    margin-top: 110px;
+}
+
+.modal-dialog.modal-sm {
+    width: 510px;
+    margin-top: 110px;
+}
+
+.modal-dialog.modal-large {
+    width: 910px;
+    margin-top: 110px;
+}
+
+.modal-dialog.modals-default .modal-content,
+.modal-dialog.modal-sm .modal-content,
+.modal-dialog.modal-large .modal-content {
+    border-radius: 0px;
+    padding: 40px 100px;
+}
+
+.modals-default .modal-header,
+.modals-default .modal-footer,
+.modals-default .modal-body,
+.modal-sm .modal-body,
+.modal-sm .modal-header,
+.modal-sm .modal-footer,
+.modal-large .modal-body,
+.modal-large .modal-header,
+.modal-large .modal-footer {
+    padding: 0px;
+    border-bottom: 0px solid #e5e5e5;
+    border-top: 0px solid #e5e5e5;
+}
+
+.modals-hd a,
+.accordion-hd a,
+.tab-hd a {
+    color: #333;
+}
+
+.modals-hd a:hover,
+.accordion-hd a:hover,
+.tab-hd a:hover {
+    color: #00c292;
+}
+
+.modals-default-cl .nk-red.btn-info {
+    background: #F44336;
+}
+
+.modals-default-cl .nk-light-blue.btn-info {
+    background: #03A9F4;
+}
+
+.modals-default-cl .nk-cyan.btn-info {
+    background: #00BCD4;
+}
+
+.modals-default-cl .nk-deep-purple.btn-info {
+    background: #673AB7;
+}
+
+.modals-default-cl .nk-indigo.btn-info {
+    background: #3F51B5;
+}
+
+.modals-default-cl .nk-blue.btn-info {
+    background: #2196F3;
+}
+
+.modals-default.nk-red .modal-content,
+.modals-default.nk-red .close,
+.modals-default.nk-red .modal-footer .btn-default {
+    background: #F44336;
+}
+
+.modals-default.nk-red .modal-content {
+    border: 1px solid #F44336;
+}
+
+.modals-default.nk-light-blue .modal-content,
+.modals-default.nk-light-blue .close,
+.modals-default.nk-light-blue .modal-footer .btn-default {
+    background: #03A9F4;
+}
+
+.modals-default.nk-light-blue .modal-content {
+    border: 1px solid #03A9F4;
+}
+
+.modals-default.nk-cyan .modal-content,
+.modals-default.nk-cyan .close,
+.modals-default.nk-cyan .modal-footer .btn-default {
+    background: #00BCD4;
+}
+
+.modals-default.nk-cyan .modal-content {
+    border: 1px solid #00BCD4;
+}
+
+.modals-default.nk-deep-purple .modal-content,
+.modals-default.nk-deep-purple .close,
+.modals-default.nk-deep-purple .modal-footer .btn-default {
+    background: #673AB7;
+}
+
+.modals-default.nk-deep-purple .modal-content {
+    border: 1px solid #673AB7;
+}
+
+.modals-default.nk-indigo .modal-content,
+.modals-default.nk-indigo .close,
+.modals-default.nk-indigo .modal-footer .btn-default {
+    background: #3F51B5;
+}
+
+.modals-default.nk-indigo .modal-content {
+    border: 1px solid #3F51B5;
+}
+
+.modals-default.nk-blue .modal-content,
+.modals-default.nk-blue .close,
+.modals-default.nk-blue .modal-footer .btn-default {
+    background: #2196F3;
+}
+
+.modals-default.nk-blue .modal-content {
+    border: 1px solid #2196F3;
+}
+
+.modals-default.nk-red .modal-body h2,
+.modals-default.nk-red .modal-body p,
+.modals-default.nk-light-blue .modal-body h2,
+.modals-default.nk-light-blue .modal-body p,
+.modals-default.nk-cyan .modal-body h2,
+.modals-default.nk-cyan .modal-body p,
+.modals-default.nk-deep-purple .modal-body h2,
+.modals-default.nk-deep-purple .modal-body p,
+.modals-default.nk-indigo .modal-body h2,
+.modals-default.nk-indigo .modal-body p,
+.modals-default.nk-blue .modal-body h2,
+.modals-default.nk-blue .modal-body p {
+    color: #fff;
+}
+
+.modals-hd p,
+.modal-df-hd p {
+    margin-bottom: 0px;
+}
+
+.modals-hd {
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------*/
+/*  28.  Typography CSS
+/*----------------------------------------*/
+.typography-list h3 {
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+}
+
+.typography-heading h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.typography-hd-cr-2 h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.typography-hd-cr-1,
+.typography-hd-cr-2,
+.typography-hd-cr-3,
+.typography-hd-cr-4,
+.typography-hd-cr-5,
+.typography-hd-cr-6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.typography-hd-cr-3 h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.typography-hd-cr-4 h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.typography-hd-cr-5 h5 {
+    font-size: 17px;
+    color: #333;
+}
+
+.typography-hd-cr-6 h6,
+.tpgp-ele-tx h2,
+.tpgp-al-cl h3,
+.tpgp-al-cl p,
+.abvi-act h2,
+.abvi-act p,
+.cmp-int-box p,
+.typography-hd-cr-1 p {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+.typography-mg-b-0 {
+    margin-bottom: 0px;
+}
+
+.typography-hd-cr-6.typography-mg-b-0 p {
+    margin-bottom: 0px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+
+.tpgp-al-cl .text-capitalize {
+    margin: 0px;
+}
+
+.tpgp-al-cl .blockquote-nk {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.tpgp-al-cl ul.tpdg-ul-circle,
+.tpgp-al-cl ul.tpdg-ul-circle-2 {
+    list-style-type: circle;
+    margin-left: 15px;
+}
+
+.tpgp-al-cl ul.tpdg-ul-circle li,
+.tpgp-al-cl ul.tpdg-ul-circle-2 li,
+.tpgp-orders li,
+.order-roman li {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0px;
+}
+
+.tpgp-al-cl ul.tpdg-ul-circle li:last-child,
+.tpgp-al-cl ul.tpdg-ul-circle-2 li:last-child,
+.tpgp-orders li:last-child,
+.order-roman li:last-child {
+    margin-bottom: 0px;
+}
+
+.tpgp-al-cl .tpgp-ctm-angle li {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0px;
+}
+
+.tpgp-al-cl .tpgp-ctm-angle li:last-child {
+    margin-bottom: 0px;
+}
+
+.tpgp-al-cl .tpgp-ctm-angle li i {
+    margin-right: 2px;
+    font-size: 10px;
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.abvi-mg-nk p {
+    margin-bottom: 0px;
+}
+
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tpgp-ele-tx h2,
+.tpgp-al-cl h3,
+.abvi-act h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.typography-list.typography-mgn h2,
+.typography-heading.typography-mgn .mn-hd-s,
+.typography-in-hd.typography-mgn .mn-hd-s,
+.tpgp-hp-hd.typography-mgn .mn-hd-s {
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------*/
+/*  29.  Contact CSS
+/*----------------------------------------*/
+.contact-img img {
+    border-radius: 50%;
+    margin: 25px 0px;
+}
+
+.contact-ctn h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-ctn .ctn-ads {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0px;
+}
+
+.contact-ad-hd {
+    margin: 15px 0px;
+}
+
+.social-sn h2 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.social-sn p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.social-sn {
+    margin-right: 15px;
+}
+
+.social-st-list,
+.contact-win,
+.inbox-btn-st-ls,
+.view-mail-hd {
+    display: flex;
+}
+
+.conct-sc-ic {
+    margin-left: auto;
+}
+
+.conct-sc-ic a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #00c292;
+    border-radius: 50%;
+    color: #fff;
+    margin: 5px 0px;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    padding: 0px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.conct-sc-ic a:hover,
+.conct-sc-ic a:focus,
+.conct-sc-ic a:active {
+    color: #fff;
+}
+/*----------------------------------------*/
+/*  33.  Normal Table CSS
+/*----------------------------------------*/
+.normal-table-list .table {
+    margin-bottom: 0px;
+}
+
+.table.table-sc-ex>tbody>tr>td,
+.table.table-sc-ex>tbody>tr>th,
+.table.table-sc-ex>tfoot>tr>td,
+.table.table-sc-ex>tfoot>tr>th,
+.table.table-sc-ex>thead>tr>td,
+.table.table-sc-ex>thead>tr>th {
+    border-top: 1px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 15px;
+}
+
+.table.table-bordered>tbody>tr>td,
+.table.table-bordered>tbody>tr>th,
+.table.table-bordered>tfoot>tr>td,
+.table.table-bordered>tfoot>tr>th,
+.table.table-bordered>thead>tr>td,
+.table.table-bordered>thead>tr>th {
+    border: 1px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 15px;
+}
+
+.table-bordered,
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: 1px solid #F5F5F5;
+}
+
+.table.table-striped>tbody>tr>td,
+.table.table-striped>tbody>tr>th,
+.table.table-striped>tfoot>tr>td,
+.table.table-striped>tfoot>tr>th,
+.table.table-striped>thead>tr>td,
+.table.table-striped>thead>tr>th {
+    border-top: 0px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 15px;
+}
+
+.table.table-hover>tbody>tr>td,
+.table.table-hover>tbody>tr>th,
+.table.table-hover>tfoot>tr>td,
+.table.table-hover>tfoot>tr>th,
+.table.table-hover>thead>tr>td,
+.table.table-hover>thead>tr>th {
+    border-top: 1px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 15px 15px;
+}
+
+.table.table-condensed>tbody>tr>td,
+.table.table-condensed>tbody>tr>th,
+.table.table-condensed>tfoot>tr>td,
+.table.table-condensed>tfoot>tr>th,
+.table.table-condensed>thead>tr>td,
+.table.table-condensed>thead>tr>th {
+    border-top: 1px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+}
+
+.table.table-cl>tbody>tr>td,
+.table.table-cl>tbody>tr>th,
+.table.table-cl>tfoot>tr>td,
+.table.table-cl>tfoot>tr>th,
+.table.table-cl>thead>tr>td,
+.table.table-cl>thead>tr>th {
+    border-top: 0px solid #F5F5F5;
+    font-size: 14px;
+    color: #333;
+    padding: 15px;
+}
+
+.table.table-striped>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-sc-ex>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-bordered>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-hover>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-condensed>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-cl>thead>tr>th {
+    border-bottom: 0px solid #ddd;
+}
+
+.table.table-cl>tbody>tr.active>td,
+.table.table-cl>tbody>tr.active>th,
+.table.table-cl>tbody>tr>td.active,
+.table.table-cl>tbody>tr>th.active,
+.table.table-cl>tfoot>tr.active>td,
+.table.table-cl>tfoot>tr.active>th,
+.table.table-cl>tfoot>tr>td.active,
+.table.table-cl>tfoot>tr>th.active,
+.table.table-cl>thead>tr.active>td,
+.table.table-cl>thead>tr.active>th,
+.table.table-cl>thead>tr>td.active,
+.table.table-cl>thead>tr>th.active {
+    background: #00c292;
+    color: #fff;
+}
+
+.table.table-cl>tbody>tr.info>td,
+.table.table-cl>tbody>tr.info>th,
+.table.table-cl>tbody>tr>td.info,
+.table.table-cl>tbody>tr>th.info,
+.table.table-cl>tfoot>tr.info>td,
+.table.table-cl>tfoot>tr.info>th,
+.table.table-cl>tfoot>tr>td.info,
+.table.table-cl>tfoot>tr>th.info,
+.table.table-cl>thead>tr.info>td,
+.table.table-cl>thead>tr.info>th,
+.table.table-cl>thead>tr>td.info,
+.table.table-cl>thead>tr>th.info {
+    background: #fb9678;
+    color: #fff;
+}
+
+.table.table-cl>tbody>tr.warning>td,
+.table.table-cl>tbody>tr.warning>th,
+.table.table-cl>tbody>tr>td.warning,
+.table.table-cl>tbody>tr>th.warning,
+.table.table-cl>tfoot>tr.warning>td,
+.table.table-cl>tfoot>tr.warning>th,
+.table.table-cl>tfoot>tr>td.warning,
+.table.table-cl>tfoot>tr>th.warning,
+.table.table-cl>thead>tr.warning>td,
+.table.table-cl>thead>tr.warning>th,
+.table.table-cl>thead>tr>td.warning,
+.table.table-cl>thead>tr>th.warning {
+    background: #01c0c8;
+    color: #fff;
+}
+
+.table.table-cl>tbody>tr.danger>td,
+.table.table-cl>tbody>tr.danger>th,
+.table.table-cl>tbody>tr>td.danger,
+.table.table-cl>tbody>tr>th.danger,
+.table.table-cl>tfoot>tr.danger>td,
+.table.table-cl>tfoot>tr.danger>th,
+.table.table-cl>tfoot>tr>td.danger,
+.table.table-cl>tfoot>tr>th.danger,
+.table.table-cl>thead>tr.danger>td,
+.table.table-cl>thead>tr.danger>th,
+.table.table-cl>thead>tr>td.danger,
+.table.table-cl>thead>tr>th.danger {
+    background: #ab8ce4;
+    color: #fff;
+}
+
+.table.table-cl>tbody>tr.success>td,
+.table.table-cl>tbody>tr.success>th,
+.table.table-cl>tbody>tr>td.success,
+.table.table-cl>tbody>tr>th.success,
+.table.table-cl>tfoot>tr.success>td,
+.table.table-cl>tfoot>tr.success>th,
+.table.table-cl>tfoot>tr>td.success,
+.table.table-cl>tfoot>tr>th.success,
+.table.table-cl>thead>tr.success>td,
+.table.table-cl>thead>tr.success>th,
+.table.table-cl>thead>tr>td.success,
+.table.table-cl>thead>tr>th.success {
+    background: #e46a76;
+    color: #fff;
+}
+
+.basic-tb-hd p {
+    margin-bottom: 0px;
+}
+
+.basic-tb-hd {
+    margin-bottom: 20px;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    font-size: 14px;
+    color: #333;
+}
+
+/*----------------------------------------*/
+/*  34.  Data Table CSS
+/*----------------------------------------*/
+.dataTables_filter,
+.dataTables_length {
+    padding: 20px 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.dataTables_filter label,
+.dataTables_length label {
+    font-weight: 400;
+}
+
+.dataTables_length select {
+    margin: 0 8px;
+}
+
+.dataTables_filter input,
+.dataTables_filter select,
+.dataTables_length input,
+.dataTables_length select {
+    border: 1px solid #eee;
+    height: 35px;
+    padding: 7px 15px;
+    font-size: 13px;
+    border-radius: 2px;
+    line-height: 100%;
+    background-color: #fff;
+    outline: none;
+}
+
+.dataTables_filter input:focus,
+.dataTables_filter select:focus,
+.dataTables_length input:focus,
+.dataTables_length select:focus,
+.dataTables_length option:focus {
+    border: 1px solid #00c292;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    width: 40%;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_filter label {
+    width: 100%;
+}
+
+.dataTables_filter label:after {
+    content: '\e928';
+    font-family: 'notika-icon';
+    position: absolute;
+    font-size: 14px;
+    right: 0px;
+    top: 8px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin: 0 !important;
+    padding: 0px 0px 0px 10px;
+}
+
+.dataTables_filter label {
+    position: relative;
+    font-size: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:before {
+    content: '\e903';
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:before,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:before {
+    font-family: 'notika-icon';
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    font-size: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:before {
+    content: '\e91e';
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #00c292;
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    vertical-align: top;
+    color: #7E7E7E !important;
+    margin: 0 2px;
+    border: 0 !important;
+    line-height: 21px;
+    box-shadow: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+    color: white !important;
+    border: 0px solid #ccc;
+    background: #00c292 !important;
+}
+
+#data-table-basic {
+    padding: 20px 0px;
+}
+
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 0px;
+}
+
+#data-table-basic_filter label,
+#data-table-basic_length label {
+    margin-bottom: 0px;
+}
+
+/*----------------------------------------*/
+/*  35.  Form Element CSS
+/*----------------------------------------*/
+.nk-int-st input[type="text"],
+.nk-int-st textarea,
+.nk-int-st [type="number"],
+.nk-int-st [type="password"] {
+    box-shadow: none;
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px;
+    resize: none;
+    border-radius: 0px;
+}
+
+.nk-int-st textarea:active,
+.nk-int-st textarea:focus,
+.nk-int-st textarea:hover,
+.nk-int-st [type="password"]:focus,
+.nk-int-st [type="password"]:active {
+    box-shadow: none;
+}
+
+.nk-int-st {
+    position: relative;
+    vertical-align: top;
+}
+
+.nk-int-st:not([class*=has-]):after {
+    background: #00c292;
+}
+
+.nk-int-st:not(.disabled):after,
+.nk-int-st:not(.readonly):after {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.nk-int-st:not(.form-group) {
+    display: inline-block;
+    width: 100%;
+}
+
+.nk-int-st.nk-toggled:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1)
+}
+
+.floating-numner p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.floating-numner.fm-ele-mg p {
+    margin-bottom: 0px;
+}
+
+.floating-numner.form-rlt-mg p {
+    margin-top: 0px;
+}
+
+.float-lb .nk-label {
+    font-size: 14px;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    position: absolute;
+    top: 5px;
+    font-weight: 400;
+    color: #959595;
+    pointer-events: none;
+    z-index: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+.float-lb .nk-toggled .nk-label {
+    top: -15px;
+    font-size: 12px
+}
+
+.form-group.float-lb {
+    margin: 15px 0px;
+}
+
+.form-group.float-lb.floating-lb {
+    margin-top: 0px;
+}
+
+.nk-int-st .form-control[disabled],
+.nk-int-st .form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.fm-checkbox label {
+    font-weight: 400;
+}
+
+.fm-checkbox {
+    margin: 10px 0px;
+}
+
+.iradio_square-green {
+    background-position: -109px 0;
+}
+
+.form-group.form-elet-mg {
+    margin-bottom: 0px;
+}
+
+.fm-checkbox.form-elet-mg {
+    margin-bottom: 0px;
+}
+
+.fm-checkbox.form-elet-mg label {
+    margin-bottom: 0px;
+}
+
+textarea.auto-size {
+    height: 100%;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-wrap: normal;
+}
+
+.contact-hd.sm-form-hd p {
+    margin-bottom: 0px;
+}
+
+.contact-form-int {
+    margin-top: 15px;
+}
+
+/*----------------------------------------*/
+/*  36.  Form Components CSS
+/*----------------------------------------*/
+.ic-cmp-int {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.form-ic-cmp {
+    padding: 0px 12px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0;
+}
+
+.form-ic-cmp {
+    display: table-cell;
+    width: 1%;
+}
+
+.form-ic-cmp i {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    left: 0px;
+}
+
+.cmp-tb-hd h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.bcs-hd h2 {
+    font-size: 16px;
+}
+
+.cmp-tb-hd p {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.cmp-tb-hd {
+    margin-bottom: 20px;
+}
+
+.cmp-tb-hd.cmp-int-hd h2 {
+    margin-bottom: 0px;
+}
+
+.cmp-tb-hd.air-mode-ctn p {
+    margin-bottom: 0px;
+}
+
+.int-bg-it .form-ic-cmp i {
+    font-size: 20px;
+    top: 20px;
+}
+
+.nk-int-mk h2 {
+    font-size: 16px;
+    color: #333;
+    margin-left: 40px;
+    font-weight: 400;
+}
+
+.nk-int-mk p {
+    font-size: 14px;
+    color: #333;
+}
+
+.bootstrap-select .selected .check-mark {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.bootstrap-select .check-mark {
+    margin-top: -5px !important;
+    font-size: 14px;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    display: block !important;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
+
+.bootstrap-select>.btn-default:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    height: calc(100% - 2px);
+    width: 30px;
+    background-color: #FFF;
+    background-position: right calc(100% - 7px);
+    background-repeat: no-repeat;
+    background-image: url(images/select.png);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bootstrap-select>.btn-default {
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    background: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.bootstrap-select>.btn-default:active,
+.bootstrap-select>.btn-default:hover,
+.bootstrap-select>.btn-default:focus {
+    outline: none !important;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+    padding: 10px 10px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+    border: 0px solid #ccc;
+}
+
+.bootstrap-select .dropdown-menu>.active>a,
+.bootstrap-select .dropdown-menu>.active>a:focus,
+.bootstrap-select .dropdown-menu>.active>a:hover {
+    background-color: #00c292;
+}
+
+.bootstrap-select .bs-searchbox {
+    padding: 5px 5px 5px 40px;
+    position: relative;
+    background: #F7F7F7;
+    margin-top: -10px;
+}
+
+.bootstrap-select .bs-searchbox:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    content: "\e928";
+    font-family: 'notika-icon' !important;
+    font-size: 16px;
+    padding: 12px 0 0 15px;
+}
+
+.bootstrap-select .bs-searchbox input[type="text"] {
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    box-shadow: none;
+    background-image: none !important;
+    background: #F6F8FA;
+}
+
+.nk-int-mk.sl-dp-mn h2 {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.bootstrap-select .notify {
+    background: #F44336 !important;
+    color: #fff;
+}
+
+.bootstrap-select .dropdown-menu {
+    top: 0px;
+}
+
+.chosen-select-act .chosen-container {
+    padding: 6px 2px;
+}
+
+.chosen-select-act .chosen-single {
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+    border-radius: 0px;
+}
+
+.chosen-select-act .chosen-container .chosen-drop {
+    border: 0px solid #ccc;
+}
+
+.chosen-select-act .chosen-container-active.chosen-with-drop .chosen-single {
+    border: 0px solid #ccc;
+    background-image: none;
+}
+
+.chosen-select-act .chosen-container .chosen-drop {
+    top: 0px;
+}
+
+.chosen-select-act .chosen-container .chosen-results li.highlighted {
+    background: #00c292;
+    color: #fff;
+}
+
+.chosen-select-act .chosen-container .chosen-results li {
+    position: relative;
+}
+
+.chosen-select-act .chosen-container .chosen-results li.result-selected:before {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 14px;
+}
+
+.chosen-select-act .chosen-container .chosen-results li.result-selected:before {
+    content: "\e906";
+    font-family: 'notika-icon' !important;
+    font-size: 16px;
+}
+
+.chosen-select-act .chosen-container .chosen-results li {
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.chosen-select-act .chosen-container-single .chosen-search {
+    padding: 5px 5px 5px 40px !important;
+    background: #F7F7F7;
+}
+
+.chosen-select-act .chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 0;
+    padding: 3px 4px;
+    white-space: nowrap;
+}
+
+.chosen-select-act .chosen-container-single .chosen-search:before {
+    content: "\e928";
+    font-family: 'notika-icon' !important;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 40px;
+    height: 100%;
+    font-size: 16px;
+    padding: 5px 0 0 15px;
+}
+
+.chosen-select-act .chosen-container-single .chosen-search input[type="text"] {
+    border: 0px solid #ccc;
+}
+
+.chosen-select-act .chosen-container .chosen-results li.disabled-result {
+    color: #ccc;
+}
+
+.chosen-select-act .chosen-container-active .chosen-choices {
+    border: 0px solid #ccc;
+    box-shadow: none;
+}
+
+.bootstrap-select.btn-group .no-results {
+    padding: 10px 15px;
+    margin: 0 0px;
+    background: #fff;
+}
+
+.bootstrap-select .dropdown-menu>li>a:focus,
+.bootstrap-select .dropdown-menu>li>a:hover,
+.bootstrap-select .dropdown-menu>li>a:active {
+    background-color: #00c292 !important;
+    color: #fff !important;
+}
+
+.spacer-b16a {
+    margin-bottom: 5px;
+}
+
+.nk-datapk-ctm label {
+    font-size: 16px;
+    color: #333;
+}
+
+.nk-datapk-ctm .input-group-addon {
+    background-color: #fff;
+    border: 0px solid #ccc;
+}
+
+.nk-datapk-ctm .form-control,
+.nk-line .form-control {
+    background-color: #fff;
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.datepicker {
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.datepicker.dropdown-menu {
+    border: 0px solid #ccc;
+    border: 0px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 300px;
+}
+
+.datepicker-days .table-condensed thead tr {
+    background: #00c292;
+    color: #fff;
+}
+
+.datepicker-days .table-condensed thead tr:first-child {
+    height: 70px;
+}
+
+.datepicker-days .table-condensed thead tr:last-child {
+    background: #11cc9d;
+    height: 40px;
+}
+
+.datepicker-days .table-condensed thead tr th:first-child {
+    display: none;
+}
+
+.datepicker-days .table-condensed tbody tr td:first-child {
+    display: none;
+}
+
+.datepicker thead tr:first-child th:hover,
+.datepicker tfoot tr th:hover {
+    background: #00c292;
+    color: #fff;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+    background: #00c292;
+    color: #fff;
+}
+
+.datepicker-dropdown:after,
+.datepicker-dropdown:before {
+    position: unset;
+    display: none;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+    border-radius: 0px;
+}
+
+.datepicker table {
+    width: 300px;
+    height: 380px;
+}
+
+.datepicker.dropdown-menu th,
+.datepicker.dropdown-menu td {
+    padding: 10px 5px;
+}
+
+.datepicker th.datepicker-switch {
+    font-size: 16px;
+}
+
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:focus,
+.datepicker table tr td span.active:hover:focus,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active.disabled:hover:focus,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td span.active,
+.open .dropdown-toggle.datepicker table tr td span.active:hover,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+    background: #00c292;
+    color: #fff;
+}
+
+.datepicker-months .table-condensed thead tr,
+.datepicker-years .table-condensed thead tr {
+    height: 70px;
+    background: #00c292;
+    color: #fff;
+}
+
+.datepicker.dropdown-menu .datepicker-months th,
+.datepicker.dropdown-menu .datepicker-months td {
+    padding: 20px 22px;
+}
+
+.nk-container i.nk-value {
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.nk-container>.input-group input.nk-value {
+    color: #000 !important;
+    background: 0 0 !important;
+}
+
+.nk-line .form-control {
+    background-color: #fff;
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.nk-container .input-group-addon {
+    border: 0px solid #ccc;
+    background-color: #fff;
+}
+
+.nk-container>.input-group .dropdown-menu {
+    padding: 20px;
+    border: 0px solid #ccc;
+}
+
+.cmp-tb-hd label {
+    font-size: 16px;
+    color: #333;
+}
+
+.note-editor .fa,
+.note-popover .fa {
+    font-size: 12px;
+}
+
+.summernote-clickable .btn-primary,
+.summernote-clickable .btn-success,
+.modal-footer .btn-primary {
+    background: #00c292;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+}
+
+.summernote-clickable .btn-primary:active,
+.summernote-clickable .btn-primary:focus,
+.summernote-clickable .btn-success:focus,
+.summernote-clickable .btn-success:active,
+.modal-footer .btn-primary:focus,
+.modal-footer .btn-primary:active {
+    background: #00c292;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+}
+
+.summernote-clickable {
+    margin-bottom: 10px;
+}
+
+.html-editor-click p,
+.note-editable p {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+.html-editor-airmod.note-air-editor.note-editable.panel-body p {
+    margin-bottom: 0px;
+}
+
+.html-editor-airmod.note-air-editor.note-editable.panel-body {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.panel-heading.note-toolbar>.btn-group {
+    margin-top: 0px;
+}
+
+.note-toolbar.panel-heading {
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.btn-group .btn-default:hover {
+    background: #fff;
+}
+
+.note-editor {
+    border: 1px solid #ccc;
+}
+
+.note-link-dialog .modal-title,
+.note-link-dialog .form-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.note-link-dialog .modal-header {
+    border-bottom: 0px solid #e5e5e5;
+}
+
+.note-link-dialog .modal-footer {
+    border-top: 0px solid #e5e5e5;
+}
+
+.contact-hd.dialog-hd p {
+    margin-bottom: 0px;
+}
+
+.contact-hd.dialog-hd {
+    margin-bottom: 20px;
+}
+
+.note-link-dialog .modal-dialog .modal-content {
+    border-radius: 2px;
+    border: 0px solid #ccc;
+}
+
+.dropzone.dropzone-nk {
+    border: 2px dashed #00c292;
+}
+
+.dropzone.dropzone-nk i {
+    font-size: 30px;
+    color: #333;
+}
+
+.dropzone.dropzone-nk h2,
+.dropzone.dropzone-nk p {
+    font-size: 14px;
+    color: #333;
+}
+
+.dropzone.dropzone-nk h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.themesaller-forms .slider-group .sliderv-wrapper {
+    margin-bottom: 0px;
+}
+
+.chosen-select-act .chosen-container {
+    padding-bottom: 0px;
+}
+
+.nk-int-st .input-group-addon {
+    padding: 0px;
+}
+
+.cmp-tb-hd.bsc-smp-sm {
+    margin-bottom: 0px;
+}
+
+.form-single.nk-int-st.widget-form textarea {
+    height: 132px;
+}
+
+/*----------------------------------------*/
+/*  37.  Form examples CSS
+/*----------------------------------------*/
+.form-example-int label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.form-example-int input[type="text"] {
+    font-size: 14px;
+}
+
+.form-example-int.form-horizental .hrzn-fm {
+    text-align: right;
+    display: block;
+}
+
+.form-example-st .form-group,
+.form-example-st .fm-checkbox {
+    margin-bottom: 0px;
+}
+
+/*----------------------------------------*/
+/*  40.  404 CSS
+/*----------------------------------------*/
+.error-page-wrap {
+    padding: 20px 20px;
+}
+
+.error-page-wrap h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.error-page-wrap p {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+.error-page-wrap .btn {
+    background: #00c292;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+    outline: none;
+    margin: 0px 5px;
+    font-size: 14px;
+}
+
+.error-page-wrap .counter {
+    color: #00c292;
+}
+
+.error-page-wrap i {
+    font-size: 40px;
+    color: #00c292;
+    padding-bottom: 15px !important;
+    display: block;
+}
+
+/*----------------------------------------*/
+/*  41.  Default Layout CSS
+/*----------------------------------------*/
+.default-layout-dv,
+.menu-layout-dv {
+    height: 510px;
+}
+
+/*----------------------------------------*/
+/*  42.  Menu Hover Layout CSS
+/*----------------------------------------*/
+.main-menu-lv-int {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-menu-lv-int ul.main-menu-lv {
+    text-align: center;
+}
+
+.main-menu-lv-int ul.main-menu-lv>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu-lv-int ul.main-menu-lv>li>a {
+    padding: 20px 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv>li i {
+    margin-right: 3px;
+}
+
+.main-menu-lv-int ul.main-menu-lv>li:hover>a {
+    color: #00c292;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv li ul.menu-dp-lt {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 200px;
+    background: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease 0s;
+    border-top: 2px solid #00c292;
+}
+
+.main-menu-lv-int ul.main-menu-lv li:hover ul.menu-dp-lt {
+    z-index: 9;
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv li ul.menu-dp-lt li a {
+    display: block;
+    text-align: left;
+    padding: 8px 0px;
+    color: #333;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv li:hover ul.menu-dp-lt li a:hover {
+    color: #00c292;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv li ul.menu-dp-lt li a:hover {
+    color: #00c292;
+    padding: 8px 5px;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv.effect-tran-mn li ul.menu-dp-lt {
+    top: 130%;
+    transition: all .4s ease 0s;
+}
+
+.main-menu-lv-int ul.main-menu-lv.effect-tran-mn li:hover ul.menu-dp-lt {
+    top: 100%;
+    transition: all .4s ease 0s;
+}
+
+
+/*----------------------------------------*/
+/*  46. overwriting CSS
+/*----------------------------------------*/
+.contact-map.widget-contact-map {
+    height: 187px;
+}
+
+.contact-list.widget-contact-list {
+    padding: 20px 0px 12px 0px;
+}
+
+.contact-dt ul.contact-list.widget-contact-list {
+    margin-bottom: 0px;
+}
+
+.contact-hd.widget-ctn-hd p {
+    margin-bottom: 0px;
+}
+
+.form-single.widget-form input[type="text"]:focus {
+    border: 0px solid #00c292;
+}
+
+.form-single.widget-form {
+    padding: 0px 0px;
+}
+
+.widget-form input[type="email"],
+.cmp-email-over input[type="email"],
+.widget-form input[type="number"],
+.cmp-email-over input[type="text"],
+.widget-form textarea {
+    box-shadow: none;
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px;
+    border-radius: 0px;
+    margin: 0px 0px;
+}
+
+.widget-form input[type="email"]:focus,
+.cmp-email-over input[type="email"]:focus,
+.widget-form input[type="number"]:focus,
+.cmp-email-over input[type="text"]:focus,
+.widget-form textarea:focus {
+    box-shadow: none;
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px;
+}
+
+.btn-group.nk-email-inbox .btn-default {
+    border: 1px solid transparent;
+}
+
+.btn-group.nk-email-inbox .btn-default:hover {
+    background: #00c292;
+    border: 1px solid #00c292;
+}
+
+.cmp-int-box .note-popover .popover .popover-content>.btn-group,
+.cmp-int-box .panel-heading.note-toolbar>.btn-group {
+    margin-right: 2px;
+}
+
+.note-editable.panel-body h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.note-editable.panel-body .vw-tr {
+    display: block;
+}
+
+.cmp-int-box .note-editor .note-editing-area .note-editable {
+    padding: 20px;
+}
+
+.todo-flex {
+    display: flex;
+}
+
+.btn.notika-add-todo,
+.btn.notika-chat-btn {
+    border-radius: 0px;
+    position: relative;
+    top: 2px;
+    padding: 6px 25px;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+    background: white url(chosen-sprite.png) no-repeat 100% -20px;
+    background: url(chosen-sprite.png) no-repeat 100% -45px;
+}
+
+.modal-footer .btn-primary[disabled]:focus,
+.modal-footer .btn-primary[disabled]:hover {
+    background: #00c292;
+}
+
+.menu-it-icon-pro i {
+    font-size: 18px;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.menu-it-icon-pro.mn-ic-cl i {
+    color: #00c292;
+}
+
+/*----------------------------------------*/
+/*  47. Sidebar Left CSS
+/*----------------------------------------*/
+.left-sidebar-pro {
+    z-index: 9999;
+    width: 200px;
+    -webkit-box-shadow: 20px 0 20px -20px #d3d7e9;
+    -moz-box-shadow: 20px 0 20px -20px #d3d7e9;
+    box-shadow: 20px 0 20px -20px #d3d7e9;
+    transition: all 0.3s ease 0s;
+}
+
+.sidebar-nav.left-sidebar-menu-pro ul {
+    background: #fff;
+}
+
+#sidebar {
+    min-width: 200px;
+    background: #fff;
+    color: #fff;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+    z-index: 999;
+    height: 100%;
+    -webkit-box-shadow: 20px 0 20px -20px #d3d7e9;
+    -moz-box-shadow: 20px 0 20px -20px #d3d7e9;
+    box-shadow: 20px 0 20px -20px #d3d7e9;
+    top: 50px;
+}
+
+#sidebar .sidebar-header {
+    background: #fff;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar-nav {
+    background: #fff;
+}
+
+.sidebar-nav .metismenu {
+    background: #fff;
+}
+
+.sidebar-user-profile {
+    text-align: center;
+    padding: 40px 30px 30px 30px;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 99;
+}
+
+.sidebar-user-profile .mn-us-pro {
+    display: none;
+}
+
+.sidebar-user-profile .sd-user-profile {
+    border-radius: 50%;
+}
+
+.sidebar-nav.left-sidebar-menu-pro .metismenu a:hover,
+.sidebar-nav.left-sidebar-menu-pro .metismenu a:focus,
+.sidebar-nav.left-sidebar-menu-pro .metismenu a:active {
+    color: #fff;
+    background: #00c292;
+}
+
+.sidebar-nav.left-sidebar-menu-pro .metismenu li a:hover .icon-wrap,
+.sidebar-nav.left-sidebar-menu-pro .metismenu li a:focus .icon-wrap,
+.sidebar-nav.left-sidebar-menu-pro .metismenu li a:active .icon-wrap {
+    color: #fff;
+}
+
+.sidebar-nav.left-sidebar-menu-pro .metismenu li .icon-wrap {
+    position: relative;
+    top: 3px;
+}
+
+.sidebar-nav.left-sidebar-menu-pro ul.metismenu li ul.submenu-angle li a {
+    font-size: 14px;
+}
+
+.sidebar-user-profile h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0px;
+}
+
+.profile-action {
+    margin-top: 10px;
+}
+
+.profile-action ul.pro-action-mn li {
+    display: inline-block;
+    border-right: 1px solid #e4e7f2;
+}
+
+.profile-action ul.pro-action-mn li:first-child {
+    border-left: 1px solid #e4e7f2;
+}
+
+.profile-action ul.pro-action-mn li a {
+    font-size: 18px;
+    color: #333;
+    margin: 0px 10px;
+    transition: all .4s ease 0s;
+}
+
+.profile-action ul.pro-action-mn li a:hover {
+    color: #00c292;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav.left-sidebar-menu-pro .metismenu .has-arrow:after {
+    font-size: 14px;
+}
+
+.all-content-wrapper {
+    margin-left: 200px;
+    transition: all 0.3s ease 0s;
+}
+
+.rtl-layout.mini-navbar .all-content-wrapper {
+    margin-right: 80px;
+}
+
+.comment-scrollbar {
+    height: 400px;
+}
+
+.comment-scrollbar .mCSB_outside+.mCSB_scrollTools {
+    right: -2px;
+    top: 5px;
+}
+
+.menu-switcher-pro {
+    border-right: 1px solid #31b191;
+    margin-right: 10px;
+    padding: 4px 0px;
+}
+
+.menu-switcher-pro .btn.bar-button-pro {
+    background: #00c292;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 18px;
+    position: relative;
+    left: 3px;
+}
+
+.menu-switcher-pro .btn.bar-button-pro:hover,
+.menu-switcher-pro .btn.bar-button-pro:focus,
+.menu-switcher-pro .btn.bar-button-pro:active {
+    background: #00c292;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+#sidebar.active .sidebar-user-profile {
+    padding: 40px 15px 30px 15px;
+}
+
+#sidebar.active .sidebar-user-profile h2 {
+    display: none;
+}
+
+#sidebar.active .profile-action ul.pro-action-mn li:first-child {
+    border-left: 0px solid #e4e7f2;
+}
+
+#sidebar.active .profile-action ul.pro-action-mn li {
+    border-right: 0px solid #e4e7f2;
+    margin: 5px 0px;
+}
+
+#sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle {
+    position: absolute;
+    right: -180px;
+    top: 0px;
+    text-align: left;
+    width: 180px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .175);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .175);
+}
+
+#sidebar.active .mCustomScrollBox {
+    overflow: unset;
+}
+
+#sidebar.active .mCSB_container {
+    overflow: unset;
+}
+
+#sidebar.active .comment-scrollbar {
+    height: 238px;
+}
+
+#sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle.notification-mini-nb-dp {
+    top: -270px;
+}
+
+#sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle.pages-mini-nb-dp {
+    top: -150px;
+}
+
+.mini-navbar .all-content-wrapper {
+    margin-left: 80px;
+    transition: all 0.3s ease 0s;
+}
+
+#sidebar.active .metismenu li .submenu-angle li a {
+    padding: 12px 20px 12px 20px;
+}
+
+#sidebar.active .mCSB_scrollTools {
+    height: 370px;
+}
+
+/*----------------------------------------*/
+/*  48. Small sidebar CSS
+/*----------------------------------------*/
+.left-sidebar-pro.small-sidebar-df {
+    width: 180px;
+}
+
+.left-sidebar-pro.small-sidebar-df #sidebar {
+    min-width: 180px;
+}
+
+.left-sidebar-pro.small-sidebar-df #sidebar.active {
+    min-width: 80px;
+}
+
+.all-content-wrapper.small-ctn-wp {
+    margin-left: 180px;
+}
+
+.mini-navbar .all-content-wrapper.small-ctn-wp {
+    margin-left: 80px;
+}
+
+/*----------------------------------------*/
+/*  49. large sidebar CSS
+/*----------------------------------------*/
+.left-sidebar-pro.large-sidebar-df {
+    width: 220px;
+}
+
+.left-sidebar-pro.large-sidebar-df #sidebar {
+    min-width: 220px;
+}
+
+.left-sidebar-pro.large-sidebar-df #sidebar.active {
+    min-width: 80px;
+}
+
+.all-content-wrapper.large-ctn-wp {
+    margin-left: 220px;
+}
+
+.mini-navbar .all-content-wrapper.large-ctn-wp {
+    margin-left: 80px;
+}
+
+/*----------------------------------------*/
+/*  50. Mini sidebar CSS
+/*----------------------------------------*/
+.left-sidebar-pro.mini-sidebar-ld {
+    width: 80px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar {
+    min-width: 80px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active {
+    min-width: 200px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .mini-click-non {
+    display: none;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .mini-click-non {
+    display: inline-block;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle {
+    position: absolute;
+    right: -180px;
+    top: 0px;
+    text-align: left;
+    width: 180px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .175);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .175);
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle.mini-layout-one {
+    top: -315px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle.mini-layout-two {
+    top: -100px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle.mini-layout-three {
+    top: -50px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle.mini-layout-four {
+    top: -450px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .sidebar-nav ul.metismenu li ul.submenu-angle.mini-layout-five {
+    top: -270px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle {
+    position: unset;
+    right: -180px;
+    top: 0px;
+    text-align: left;
+    width: 200px;
+    box-shadow: none;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .mCSB_container {
+    overflow: unset;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .mCustomScrollBox {
+    overflow: unset;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .sidebar-nav.left-sidebar-menu-pro .metismenu .has-arrow:after {
+    display: none;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .sidebar-user-profile h2 {
+    display: none;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .profile-action ul.pro-action-mn li:first-child {
+    border-left: 0px solid #e4e7f2;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .profile-action ul.pro-action-mn li {
+    border-right: 0px solid #e4e7f2;
+    display: block;
+    margin: 5px 0px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .sidebar-user-profile {
+    padding: 40px 10px 30px 10px;
+    position: relative;
+    z-index: 9;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .sidebar-nav .metismenu a {
+    text-align: center;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .sidebar-nav .metismenu a {
+    text-align: left;
+}
+
+.left-sidebar-pro.mini-sidebar-ld .sidebar-nav.left-sidebar-menu-pro ul.metismenu li ul.submenu-angle li a {
+    text-align: left;
+    padding: 12px 20px 12px 20px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .comment-scrollbar {
+    height: 400px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar .comment-scrollbar {
+    height: 400px;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .sidebar-nav.left-sidebar-menu-pro .metismenu .has-arrow:after {
+    display: block;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .sidebar-user-profile h2 {
+    display: block;
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .profile-action ul.pro-action-mn li {
+    display: inline-block;
+    margin: 0px 0px
+}
+
+.left-sidebar-pro.mini-sidebar-ld #sidebar.active .sidebar-nav.left-sidebar-menu-pro ul.metismenu li ul.submenu-angle li a {
+    text-align: left;
+    padding: 10px 15px 10px 40px;
+    position: relative;
+    display: block;
+}
+
+.all-content-wrapper.mini-sidebar-ctn {
+    margin-left: 80px;
+}
+
+.mini-navbar .all-content-wrapper.mini-sidebar-ctn {
+    margin-left: 200px;
+}
+
+.box-layout.mini-navbar .menu-switcher-pro {
+    margin-right: 5px;
+}
+
+/*----------------------------------------*/
+/*  51. Logo Center Layout CSS
+/*----------------------------------------*/
+.menu-switcher-pro.logo-ctn-sf {
+    margin-right: 38px;
+}
+
+.logo-area.ld-lg-ctn {
+    text-align: center;
+}
+
+/*----------------------------------------*/
+/*  52. Header Fixed Layout CSS
+/*----------------------------------------*/
+.default-layout-dv.header-fixed-bd-hd {
+    height: 600px;
+}
+
+.header-top-area.dark-header,
+.footer-copyright-area.dark-footer {
+    background: #232b32;
+}
+
+.header-top-area.dark-header .menu-switcher-pro .btn.bar-button-pro {
+    background: #232b32;
+}
+
+.header-top-area.dark-header .menu-switcher-pro {
+    border-right: 1px solid #363c3a;
+}
+
+.header-top-area.dark-header .nav.notika-top-nav>li>a:focus,
+.header-top-area.dark-header .nav.notika-top-nav>li>a:hover,
+.header-top-area.dark-header .nav.notika-top-nav>li>a:active {
+    background: #232b32;
+}
+
+.header-top-area.dark-header .nav.notika-top-nav .open>a,
+.header-top-area.dark-header .nav.notika-top-nav .open>a:focus,
+.header-top-area.dark-header .nav.notika-top-nav .open>a:hover {
+    background: #232b32;
+}
+
+/*----------------------------------------*/
+/*  53. Dark Sidebar Layout CSS
+/*----------------------------------------*/
+.dark-sidebar-ld .sidebar-user-profile,
+.dark-sidebar-ld .sidebar-nav.left-sidebar-menu-pro ul {
+    background: #232b32;
+}
+
+.dark-sidebar-ld .sidebar-nav.left-sidebar-menu-pro ul,
+.dark-sidebar-ld #sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle,
+.dark-sidebar-ld #sidebar {
+    background: #2e3841;
+}
+
+.dark-sidebar-ld .sidebar-user-profile h2 {
+    color: #fff;
+}
+
+.dark-sidebar-ld .profile-action ul.pro-action-mn li a {
+    color: #fff;
+}
+
+.dark-sidebar-ld .profile-action ul.pro-action-mn li:first-child {
+    border-left: 1px solid #3c3f48;
+}
+
+.dark-sidebar-ld .profile-action ul.pro-action-mn li {
+    border-right: 1px solid #3c3f48;
+}
+
+.dark-sidebar-ld .sidebar-nav .metismenu a,
+.dark-sidebar-ld .sidebar-nav .metismenu li .icon-wrap {
+    color: #fff;
+}
+
+/*----------------------------------------*/
+/*  54. Box Layout CSS
+/*----------------------------------------*/
+body.box-layout {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #000000 !important;
+}
+
+.box-layout-wp-bg {
+    background: #F6F8FA;
+}
+
+.logo-area.logo-left {
+    position: relative;
+    left: -24px;
+}
+
+/*----------------------------------------*/
+/*  55. offcanvas CSS
+/*----------------------------------------*/
+.offcanvas #sidebar.active {
+    min-width: 200px;
+    left: -410px;
+}
+
+.offcanvas.mini-navbar .all-content-wrapper {
+    margin-left: 0px;
+}
+
+/*----------------------------------------*/
+/*  56. Fullscreen Layout CSS
+/*----------------------------------------*/
+.fullscreen .all-content-wrapper {
+    margin-left: 0px;
+}
+
+.fullscreen #sidebar {
+    margin-left: -410px;
+}
+
+.fullscreen #sidebar.active {
+    min-width: 200px;
+    margin-left: 0px;
+}
+
+.fullscreen #sidebar.active .sidebar-user-profile h2 {
+    display: block;
+}
+
+.fullscreen #sidebar.active .profile-action ul.pro-action-mn li {
+    border-right: 1px solid #e4e7f2;
+}
+
+.fullscreen #sidebar.active .profile-action ul.pro-action-mn li:first-child {
+    border-left: 1px solid #e4e7f2;
+}
+
+.fullscreen #sidebar.active .metismenu li .mini-click-non {
+    display: inline-block;
+}
+
+.fullscreen .sidebar-nav .metismenu a {
+    text-align: left;
+}
+
+.fullscreen.mini-navbar .all-content-wrapper {
+    margin-left: 200px;
+}
+
+.fullscreen #sidebar.active .mCSB_container {
+    overflow: hidden;
+}
+
+.fullscreen #sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle {
+    position: unset;
+    box-shadow: none;
+    width: 100%;
+}
+
+.fullscreen #sidebar.active .metismenu li .submenu-angle li a {
+    padding: 12px 20px 12px 40px;
+}
+
+.fullscreen #sidebar.active .metismenu .has-arrow:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: .5em;
+    height: .5em;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: initial;
+    right: 1em;
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    -ms-transform: rotate(-45deg) translateY(-50%);
+    -o-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    top: 50%;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+/*----------------------------------------*/
+/*  57. Breadcomb CSS
+/*----------------------------------------*/
+.breadcomb-area {
+    margin-bottom: 30px;
+}
+
+.breadcomb-wp {
+    display: flex;
+}
+
+.breadcomb-icon i {
+    font-size: 20px;
+    color: #00c292;
+    padding: 15px;
+    position: relative;
+    border-radius: 50%;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: block;
+}
+
+.breadcomb-list {
+    padding: 20px 20px;
+    background: #fff;
+}
+
+.breadcomb-ctn {
+    margin-left: 20px;
+}
+
+.breadcomb-ctn h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.breadcomb-ctn p {
+    font-size: 14px;
+    color: #333;
+    margin: 0px;
+}
+
+.breadcomb-report {
+    margin: 8px 0px;
+    text-align: right;
+}
+
+.breadcomb-report .btn {
+    background: #00c292;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.breadcomb-report .btn:focus,
+.breadcomb-report .btn:active,
+.breadcomb-report .btn:hover {
+    background: #00c292;
+    box-shadow: none;
+    outline: none;
+}
+
+#sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle.layout-mini-tl {
+    top: -322px;
+}
+
+/*----------------------------------------*/
+/*  58. Notika Icon CSS
+/*----------------------------------------*/
+.notika-icon-pro a {
+    text-align: center;
+    background: #F6F8FA;
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin: 5px 5px;
+}
+
+.notika-icon-pro i {
+    font-size: 25px;
+    color: #333;
+    position: relative;
+    top: 2px;
+}
+
+/*----------------------------------------*/
+/*  59. Notika custom scrollbar CSS
+/*----------------------------------------*/
+.mCS-light-1.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #00c292;
+}
+
+.mCS-light-1.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #ccc;
+}
